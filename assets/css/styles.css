@@ -17,6 +17,12 @@ header{
     text-align: center;
 }
 
+#scoreboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .container{
    height: 100%;
 }
@@ -50,5 +56,18 @@ header{
 .img-options-div img{
     height: 100px;
     width: 100px;
+
+}
+
+.choice-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+#p1-img-choice, #p2-img-choice{
+    display: none;
 
 }

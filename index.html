@@ -10,37 +10,61 @@
 <body>
     <header><h1>Let's Play Rock Paper Scissors!</h1></header>
     <section class="container">
-        
+        <section id ="scoreboard">
+            <!-- Scoreboard -->
+            <p id="rounds-track">Best 2/3</p>
+            <p id="player-1-score">Player 1: 0</p>
+            <p id="player-2-score">Player 2: 0</p>
+        </section>
         <div id="gameArea">
+            
+            <section class="choice-pic">
+                <div>
+                    <img src=""/>
+                </div>
+            </section>
+
             <!-- Need at least 2 players -->
             <div class = "player-container" id="player-1">
+                <section class="choice-pic">
+                    <div>
+                        <img id="p1-img-choice" alt = "Human choice image" src=""/>
+                    </div>
+                </section>
+    
             <div class ="img-options-div">
                 <div class = "rock-img-div">
-                    <img class = "rock-img" src="./assets/images/rock.png" alt="Rock option.">
+                    <img onclick = 'playerOption("r")' class = "rock-img" src="./assets/images/rock.png" alt="Rock option.">
                 </div>
 
                 <div class = "paper-img-div">
-                    <img class = "paper-img" src="./assets/images/paper.png" alt="Paper option.">
+                    <img onclick = 'playerOption("p")' class = "paper-img" src="./assets/images/paper.png" alt="Paper option.">
                 </div>
 
                 <div class = "scissors-img-div">
-                    <img class = "scissors-img" src="./assets/images/scissors.png" alt="Scissors option.">
+                    <img onclick = 'playerOption("s")'class = "scissors-img" src="./assets/images/scissors.png" alt="Scissors option.">
                 </div>
             </div>
             </div>
                 
-            <div class = "player-container" id="player-1">
+            <div class = "player-container" id="player-2">
+                <section class="choice-pic">
+                    <div>
+                        <img id="p2-img-choice" src="" alt="Computer's  Choice"/>
+                    </div>
+                </section>
+    
                 <div class ="img-options-div">
                     <div class = "rock-img-div">
-                        <img class = "rock-img" src="./assets/images/rock.png" alt="Rock option.">
+                        <img onclick = 'playerOption("r")' class = "rock-img" src="./assets/images/rock.png" alt="Rock option.">
                     </div>
     
                     <div class = "paper-img-div">
-                        <img class = "paper-img" src="./assets/images/paper.png" alt="Paper option.">
+                        <img onclick = 'playerOption("p")' class = "paper-img" src="./assets/images/paper.png" alt="Paper option.">
                     </div>
     
                     <div class = "scissors-img-div">
-                        <img class = "scissors-img" src="./assets/images/scissors.png" alt="Scissors option.">
+                        <img onclick = 'playerOption("s")'class = "scissors-img" src="./assets/images/scissors.png" alt="Scissors option.">
                     </div>
                 </div>
             </div>
